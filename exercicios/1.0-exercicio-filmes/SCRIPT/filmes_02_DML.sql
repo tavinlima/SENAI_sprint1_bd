@@ -1,0 +1,20 @@
+
+USE CATALOGO;
+GO
+
+INSERT INTO GENERO (nomeGenero)
+VALUES ('DRAMA');
+GO
+
+UPDATE GENERO SET nomeGenero ='ANIMAÇÃO'
+WHERE idGenero = 1;
+GO
+
+INSERT INTO FILME (idGenero, tituloFilme)
+VALUES (1, 'COMO TREINAR O SEU DRAGÃO'), (1, 'SHREK'), (4, 'CRUELLA'), (4, 'BELEZA OCULTA');
+
+
+/*DELETE FROM GENERO
+WHERE idGenero = 3;
+GO
+*/
