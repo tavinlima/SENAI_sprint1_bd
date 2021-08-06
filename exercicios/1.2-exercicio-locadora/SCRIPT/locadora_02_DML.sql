@@ -10,20 +10,21 @@ INSERT INTO MARCA (nomeMarca)
 VALUES ('CHEVROLET');
 GO
 
-INSERT INTO CLIENTE (nomeCliente)
-VALUES ('FERN');
+INSERT INTO CLIENTE (nomeCliente, CPF)
+VALUES ('EDSON', 000000000000), ('KENO', 111111111111), ('SILVANA', 222222222222), ('FERN', 444444444444);
 GO
 
-/*UPDATE CLIENTE  
-SET nomeCliente = 'SILVANA'
-WHERE idCliente = 3; 
+/*
+UPDATE CLIENTE  
+SET CPF = 999999999999
+WHERE idCliente = 6; 
 GO
 */
 
-/*DELETE FROM CLIENTE
-WHERE idCliente = 4;
+
+DELETE CLIENTE
 GO
-*/
+
 
 INSERT INTO MODELO (idMarca, nomeModelo)
 VALUES (1,'ETIOS'), (2, 'FIAT');
@@ -40,5 +41,5 @@ VALUES (1, 1, 1, '656'), (2, 3, 2, '565');
 GO
 
 INSERT INTO ALUGUEL (idVeiculo, idCliente, dataEmpresetimo, dataDevolucao)
-VALUES (2, 2, '2021-12-29', '2021-01-29');
+VALUES (2, 6, '2021-07-24', '2021-07-28'), (1, 7, '2021-12-29', '2021-01-29');
 GO
