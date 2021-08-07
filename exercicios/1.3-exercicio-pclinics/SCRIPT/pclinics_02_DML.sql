@@ -7,8 +7,8 @@ INSERT INTO CLINICA (nomeClinica)
 VALUES ('PETREPET'), ('PETPATA');
 GO
 
-INSERT INTO VETERINARIO (idClinica, nomeVet)
-VALUES (2, 'CRIS'), (1, 'CASROL'), (1, 'BEATRIZ'), (2, 'erro'), (2, 'MANUEL');
+INSERT INTO VETERINARIO (idClinica, nomeVet, CRMV)
+VALUES (2, 'CRIS', 79472), (1, 'CAROL', 21091), (1, 'BEATRIZ', 72180), (2, 'erro', 55555), (2, 'MANUEL', 31132);
 GO
 
 /*
@@ -18,7 +18,7 @@ WHERE idVeterinario = 12;
 GO
 
 DELETE FROM VETERINARIO
-WHERE idVeterinario = 14;
+WHERE idVeterinario = 19;
 GO
 */
 
@@ -27,7 +27,7 @@ VALUES ('KARINE'), ('JOSEFA'), ('FELIPE');
 GO
 
 INSERT INTO TIPOPET (nomeTipoPet)
-VALUES ('CAVALO');
+VALUES ('HAMSTER');
 GO
 
 INSERT INTO RACA (idTipoPet, nomeRaca)
@@ -45,7 +45,6 @@ INSERT INTO PET (idRaca, idDono, nomePet)
 VALUES (2, 1, 'PRINCESA'), (2, 2, 'POLLY');
 GO
 
-INSERT INTO ATENDIMENTO (idVeterinario, idPet, descriçãoConsulta, dataConsulta, custoAtendimento)
-VALUES (11, 1, 'VACINA DE RAIVA', '2021-11-04 12:35:00', 75.00);
+INSERT INTO ATENDIMENTO (idVeterinario, idPet, descricaoConsulta, dataConsulta, custoAtendimento)
+VALUES (18, 4, 'CHECK-UP COMPLETO', '2012-12-12 12:12:12', 105.80);
 GO
-
