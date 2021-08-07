@@ -45,6 +45,7 @@ INSERT INTO PET (idRaca, idDono, nomePet)
 VALUES (2, 1, 'PRINCESA'), (2, 2, 'POLLY');
 GO
 
-INSERT INTO ATENDIMENTO (idVeterinario, idPet, dataConsulta, custoAtendimento)
-VALUES (15, 4, '2021-20-08 12:12:00', 105.80);
+INSERT INTO ATENDIMENTO (idVeterinario, idPet, descriçãoConsulta, dataConsulta, custoAtendimento)
+VALUES (11, 1, 'VACINA DE RAIVA', '2021-11-04 12:35:00', 75.00);
 GO
+
